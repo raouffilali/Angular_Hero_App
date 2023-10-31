@@ -1,0 +1,17 @@
+<div class="row mt-4">
+  <div class="col-3" *ngFor="let item of heros">
+    <div
+      [ngClass]="{'card p-1':true, 'high':item.power>100, 'medium':item.power<100 && item.power>50,'low':item.power<50}">
+      <div class="card-image">
+        <img [src]="'http://localhost:3000/getimage/' + item.image" class="w-100" alt="card image">
+      </div>
+      <div class="card-body">
+        <h3> {{item.name}} </h3>
+        <p>{{item.power}}</p>
+        <button (click)="delete(item._id)" class="btn btn-danger">Delete</button>
+        <button [routerLink]="['/update', item._id]" class="btn btn-info">Edit</button>
+      </div>
+    </div>
+  </div>
+
+</div>

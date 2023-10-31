@@ -1,0 +1,13 @@
+/* create three classes hight mediuim low each one has a diffrent background color that specifies it */
+
+.high {
+  background-color: #dfd114;
+}
+
+.medium {
+  background-color: #ff9900;
+}
+
+.low {
+  background-color: #00ff00;
+}

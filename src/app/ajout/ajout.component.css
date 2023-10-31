@@ -1,0 +1,11 @@
+.btn {
+  background-color: #9331d4;
+  color: azure;
+}
+
+/* active color */
+
+.btn:active {
+  background-color: #3516c0;
+  color: azure;
+}
